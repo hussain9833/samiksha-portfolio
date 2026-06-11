@@ -45,10 +45,11 @@ export default function Navbar() {
           position: "fixed", top: 0, left: 0, right: 0, zIndex: 100,
           transition: "all 0.4s ease",
           ...(scrolled ? {
-            background: "rgba(5,5,8,0.85)",
+            background: "rgba(255,255,255,0.92)",
             backdropFilter: "blur(20px)",
             WebkitBackdropFilter: "blur(20px)",
-            borderBottom: "1px solid rgba(255,255,255,0.05)",
+            borderBottom: "1px solid rgba(147,51,234,0.1)",
+            boxShadow: "0 2px 20px rgba(147,51,234,0.06)",
           } : {}),
         }}
       >
@@ -60,12 +61,12 @@ export default function Navbar() {
           >
             <div style={{
               width: 34, height: 34, borderRadius: 10,
-              background: "linear-gradient(135deg, #7C3AED, #3B82F6)",
+              background: "linear-gradient(135deg, #9333EA, #EC4899)",
               display: "flex", alignItems: "center", justifyContent: "center",
               fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 16, color: "#fff",
-              boxShadow: "0 0 20px rgba(124,58,237,0.3)",
+              boxShadow: "0 0 20px rgba(147,51,234,0.25)",
             }}>S</div>
-            <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 600, fontSize: 15, color: "#fff", letterSpacing: "-0.01em" }}>
+            <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 600, fontSize: 15, color: "#2E1065", letterSpacing: "-0.01em" }}>
               Samiksha Shelar
             </span>
           </button>
@@ -79,8 +80,8 @@ export default function Navbar() {
                 style={{
                   cursor: "pointer", background: "none", border: "none",
                   padding: "6px 14px", borderRadius: 8, fontSize: 14, fontWeight: 500,
-                  color: active === l.href.slice(1) ? "#fff" : "rgba(255,255,255,0.5)",
-                  backgroundColor: active === l.href.slice(1) ? "rgba(255,255,255,0.05)" : "transparent",
+                  color: active === l.href.slice(1) ? "#7C3AED" : "rgba(88,28,135,0.55)",
+                  backgroundColor: active === l.href.slice(1) ? "rgba(147,51,234,0.07)" : "transparent",
                   transition: "all 0.2s",
                 }}
               >
@@ -95,9 +96,9 @@ export default function Navbar() {
               className="hidden sm:block"
               style={{
                 cursor: "pointer", border: "none", borderRadius: 10, padding: "8px 20px",
-                background: "linear-gradient(135deg, #7C3AED, #3B82F6)",
+                background: "linear-gradient(135deg, #9333EA, #EC4899)",
                 color: "#fff", fontSize: 13, fontWeight: 600,
-                boxShadow: "0 4px 20px rgba(124,58,237,0.3)",
+                boxShadow: "0 4px 20px rgba(147,51,234,0.25)",
                 transition: "opacity 0.2s",
               }}
             >
@@ -106,7 +107,7 @@ export default function Navbar() {
             <button
               className="md:hidden"
               onClick={() => setOpen(!open)}
-              style={{ background: "none", border: "none", cursor: "pointer", color: "rgba(255,255,255,0.7)", padding: 4 }}
+              style={{ background: "none", border: "none", cursor: "pointer", color: "rgba(88,28,135,0.6)", padding: 4 }}
             >
               {open ? <X size={20} /> : <Menu size={20} />}
             </button>
@@ -125,8 +126,8 @@ export default function Navbar() {
             className="md:hidden"
             style={{
               position: "fixed", top: 68, left: 0, right: 0, zIndex: 99,
-              background: "rgba(8,8,12,0.97)", backdropFilter: "blur(20px)",
-              borderBottom: "1px solid rgba(255,255,255,0.05)",
+              background: "rgba(255,255,255,0.97)", backdropFilter: "blur(20px)",
+              borderBottom: "1px solid rgba(147,51,234,0.1)",
               padding: "12px 24px 20px",
             }}
           >
@@ -139,8 +140,8 @@ export default function Navbar() {
                 onClick={() => { scrollTo(l.href); setOpen(false); }}
                 style={{
                   display: "block", width: "100%", textAlign: "left", background: "none", border: "none",
-                  padding: "14px 0", color: "rgba(255,255,255,0.7)", fontSize: 15, fontWeight: 500,
-                  borderBottom: "1px solid rgba(255,255,255,0.04)", cursor: "pointer",
+                  padding: "14px 0", color: "rgba(88,28,135,0.7)", fontSize: 15, fontWeight: 500,
+                  borderBottom: "1px solid rgba(147,51,234,0.07)", cursor: "pointer",
                 }}
               >
                 {l.label}
@@ -150,7 +151,7 @@ export default function Navbar() {
               onClick={() => { scrollTo("#contact"); setOpen(false); }}
               style={{
                 marginTop: 16, width: "100%", padding: "13px 0", borderRadius: 12, border: "none",
-                background: "linear-gradient(135deg, #7C3AED, #3B82F6)",
+                background: "linear-gradient(135deg, #9333EA, #EC4899)",
                 color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer",
               }}
             >Let's Talk</button>

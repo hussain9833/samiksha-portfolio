@@ -22,7 +22,7 @@ function Strip({ reverse = false }: { reverse?: boolean }) {
             display: "inline-flex", alignItems: "center",
             padding: "0 28px", fontSize: 13, fontWeight: 500, letterSpacing: "0.05em",
             textTransform: "uppercase",
-            color: item === "★" ? "#7C3AED" : "rgba(255,255,255,0.3)",
+            color: item === "★" ? "#EC4899" : "rgba(88,28,135,0.45)",
           }}>
             {item}
           </span>
@@ -34,7 +34,7 @@ function Strip({ reverse = false }: { reverse?: boolean }) {
 
 export default function Marquee() {
   return (
-    <div style={{ background: "#07070C", borderTop: "1px solid rgba(255,255,255,0.04)", borderBottom: "1px solid rgba(255,255,255,0.04)", padding: "18px 0", overflow: "hidden" }}>
+    <div style={{ background: "#FAF5FF", borderTop: "1px solid rgba(147,51,234,0.08)", borderBottom: "1px solid rgba(147,51,234,0.08)", padding: "18px 0", overflow: "hidden" }}>
       <Strip />
       <div style={{ marginTop: 10 }}>
         <Strip reverse />
