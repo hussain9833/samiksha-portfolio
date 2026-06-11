@@ -1,7 +1,15 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-eslint --no-src-dir --import-alias \"@/*\" --yes)"
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-eslint --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(npm install:*)",
+      "Bash(python3 -c ':*)",
+      "Bash(npm run:*)",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); const names = Object.keys\\(l\\); console.log\\(names.filter\\(n => /link|social|share|external|globe/i.test\\(n\\)\\).join\\(', '\\)\\); console.log\\('Has Instagram:', 'Instagram' in l\\); console.log\\('Has Linkedin:', 'Linkedin' in l\\);\")",
+      "Read(//c/Users/hp/.claude/projects/c--hussain-workspace-samiksha-portfolio/memory/**)",
+      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\('tailwind:', p.devDependencies.tailwindcss, '\\\\nnext:', p.dependencies.next, '\\\\nframer:', p.dependencies['framer-motion']\\)\")",
+      "Bash(curl -s \"https://api.iconify.design/ph:chart-line-up-bold.svg\" -o /tmp/chart.svg)",
+      "Read(//tmp/**)"
     ]
   }
 }
