@@ -21,9 +21,7 @@ export const experiences: Experience[] = [
     achievements: [
       "Managed 5+ architecture and interior design brands",
       "Led a creative team of 4 members",
-      "Directed branding for FOAID (Festival of Architecture & Interior Design)",
-      "Executed AD SHOW branding campaigns",
-      "Planned and managed Meta Ads campaigns across client portfolio",
+      "Planned and managed Meta Ads campaigns",
       "Directed podcast production and content strategy",
       "Integrated AI workflow tools to boost team productivity",
     ],

@@ -154,7 +154,7 @@ export default function Hero() {
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0 10px 50px rgba(147,51,234,0.45)" }}
                 whileTap={{ scale: 0.96 }}
-                onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+                onClick={() => document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" })}
                 style={{ display: "flex", alignItems: "center", gap: 8, padding: "15px 30px", borderRadius: 14, background: "linear-gradient(135deg, #9333EA, #EC4899)", color: "#fff", fontSize: 15, fontWeight: 600, border: "none", cursor: "pointer", boxShadow: "0 4px 24px rgba(147,51,234,0.3)" }}
               >
                 View My Work <ArrowRight size={16} />
